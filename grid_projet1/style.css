@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(32, 37, 37);
+    display: grid;
+    grid-template-areas: "header"
+    "main";
+   
+}
+
+header{
+    grid-area:header ;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+   
+}
+
+.white_background{
+    background-color: white;
+    border-radius: 12px;
+    
+    text-align: center;
+     padding: 15px;
+     line-height: 0.5;
+    
+}
+img{
+  
+   border-radius: 5px;
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   object-position: top;
+    width: 80%;
+    
+}
+

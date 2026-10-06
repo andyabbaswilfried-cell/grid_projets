@@ -1,0 +1,46 @@
+body{
+    display: grid;
+    grid-template-areas: "header"
+                        "main";
+    background-color: #F1F1F1;
+}
+header{
+    grid-area: header;
+}
+h1,p{
+    text-align: center;
+}
+h1{
+    color: rgb(234, 82, 107);
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+
+div{
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+img{
+    width: 80%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+     border-radius: 12px;
+}
+
+.pink{
+    color: rgb(234, 82, 107);
+}
+
+svg{
+    fill:  rgb(234, 82, 107);;
+}
